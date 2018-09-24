@@ -48,7 +48,10 @@ class CelebA(data.Dataset):
             for attr_name in self.selected_attrs:
                 idx = self.attr2idx[attr_name]
                 label.append(values[idx] == '1')
-
+	    
+            if random.random() > 0.6:
+                random.shuffle(label)
+ 
             if (i+1) < 2000:
                 self.test_dataset.append([filename, label])
             else:

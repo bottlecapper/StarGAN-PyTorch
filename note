@@ -1,1 +1,5 @@
 Experiment: train the StarGAN model with noisy labels (60% accuracy)
+
+1. install PyTorch 0.4.0
+https://pytorch.org/get-started/previous-versions/
+pip install --user /home/jg/Downloads/torch-0.4.0-cp35-cp35m-linux_x86_64.whl
